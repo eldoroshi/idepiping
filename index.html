@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional plumbing services in Staten Island and Bensonhurst. Emergency repairs, water heater replacement, boiler service, drain cleaning, and heating system maintenance. Available 24/7.">
+    <meta name="keywords" content="plumber Staten Island, plumber Bensonhurst, emergency plumbing, water heater replacement, boiler repair, drain cleaning, heating system, bathroom repair, toilet repair">
+    <meta name="author" content="Professional Plumbing Services">
+    <link rel="canonical" href="https://idepiping.com/">
+    <title>Plumbing Services | Staten Island & Bensonhurst | 24/7 Emergency</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .dropdown {
+            position: relative;
+            margin-left: 2rem;
+        }
+
+        .dropdown-toggle {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .dropdown-toggle:hover {
+            color: #ffd700;
+        }
+
+        .dropdown-arrow {
+            font-size: 0.7rem;
+            transition: transform 0.3s;
+        }
+
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 200px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s;
+            margin-top: 1rem;
+            z-index: 1000;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: block;
+            color: #1e3c72;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            transition: background 0.3s;
+            margin-left: 0;
+        }
+
+        .dropdown-menu a:hover {
+            background: #f8f9fa;
+            color: #2a5298;
+        }
+
+        .dropdown-menu a:first-child {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .dropdown-menu a:last-child {
+            border-radius: 0 0 5px 5px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.7)), url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e3c72;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #2a5298;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .gallery {
+            background: #f8f9fa;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            height: 300px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 10001;
+            transition: color 0.3s;
+        }
+
+        .lightbox-close:hover {
+            color: #ff6b35;
+        }
+
+        .lightbox-caption {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background: rgba(30, 60, 114, 0.9);
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 80%;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(30, 60, 114, 0.9);
+            color: white;
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-card a {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .areas-served {
+            background: white;
+            text-align: center;
+        }
+
+        .areas-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .area-tag {
+            background: #2a5298;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .area-tag:hover {
+            background: #1e3c72;
+            transform: translateY(-3px);
+        }
+
+        .reviews {
+            background: #f8f9fa;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .review-stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-text {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .review-author {
+            color: #1e3c72;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .review-location {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .emergency-banner {
+            background: #ff6b35;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .services-grid, .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="emergency-banner">
+        🚨 24/7 Emergency Plumbing Service Available - <a href="tel:+13479958722" style="color: white; text-decoration: underline;">Call Now!</a> 🚨
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">IDE Piping & Heating</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#gallery">Our Work</a>
+                <div class="dropdown">
+                    <div class="dropdown-toggle">
+                        <span>Service Areas</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="staten-island-plumber.html">Staten Island</a>
+                        <a href="bensonhurst-plumber.html">Bensonhurst</a>
+                        <a href="bay-ridge-plumber.html">Bay Ridge</a>
+                        <a href="dyker-heights-plumber.html">Dyker Heights</a>
+                        <a href="borough-park-plumber.html">Borough Park</a>
+                        <a href="gravesend-plumber.html">Gravesend</a>
+                        <a href="midwood-plumber.html">Midwood</a>
+                    </div>
+                </div>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Staten Island Plumbing Services</h1>
+        <p>Expert Solutions for All Your Plumbing, Heating & Drain Needs</p>
+        <a href="tel:+13479958722" class="cta-button">Call Now</a>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Comprehensive Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚨</div>
+                    <h3>Emergency Service</h3>
+                    <p>Available 24/7 for all your urgent plumbing emergencies. Fast response time guaranteed.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔥</div>
+                    <h3>Heating System</h3>
+                    <p>Complete heating system installation, repair, and maintenance for optimal comfort year-round.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💧</div>
+                    <h3>Water Heater Replacement</h3>
+                    <p>Professional water heater installation and replacement services with premium quality units.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Boiler Service</h3>
+                    <p>Expert boiler repair, maintenance, and installation to keep your home warm and safe.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚿</div>
+                    <h3>Bathroom Repair</h3>
+                    <p>Complete bathroom plumbing solutions including fixtures, pipes, and renovation support.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚽</div>
+                    <h3>Toilet Repair</h3>
+                    <p>Quick and reliable toilet repair and replacement services for all makes and models.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Sink Repair</h3>
+                    <p>Professional sink installation, repair, and leak detection for kitchen and bathroom.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🐍</div>
+                    <h3>All Type Snake Service</h3>
+                    <p>Advanced drain cleaning and snake services for stubborn clogs and blockages.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3>Repairs & Maintenance</h3>
+                    <p>Comprehensive repair services for all plumbing systems and regular maintenance programs.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">♨️</div>
+                    <h3>Radiator Service</h3>
+                    <p>Radiator installation, repair, and maintenance for efficient heating distribution.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎚️</div>
+                    <h3>Radiator Valve</h3>
+                    <p>Expert radiator valve repair and replacement for better temperature control.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚰</div>
+                    <h3>Drain Pipe Maintenance</h3>
+                    <p>Professional drain pipe cleaning, repair, and preventative maintenance services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <h2 class="section-title">Our Quality Work</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('water-heater-installation.jpeg', 'Premium Water Heater Installation - High-efficiency ReadyHeat system')">
+                    <img src="water-heater-installation.jpeg" alt="Premium water heater installation Staten Island">
+                    <div class="gallery-caption">
+                        <strong>Premium Water Heater Installation</strong> - High-efficiency ReadyHeat system
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('boiler-installation.jpeg', 'Professional Boiler Installation - Complete heating system setup')">
+                    <img src="boiler-installation.jpeg" alt="Professional boiler service Bensonhurst">
+                    <div class="gallery-caption">
+                        <strong>Professional Boiler Installation</strong> - Complete heating system setup
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('bathroom-fixtures.jpeg', 'Modern Bathroom Fixtures - Contemporary design and functionality')">
+                    <img src="bathroom-fixtures.jpeg" alt="Modern bathroom fixtures installation">
+                    <div class="gallery-caption">
+                        <strong>Modern Bathroom Fixtures</strong> - Contemporary design and functionality
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('shower-installation.jpeg', 'Custom Shower Installation - Waterproofing and tile work')">
+                    <img src="shower-installation.jpeg" alt="Shower system installation and waterproofing">
+                    <div class="gallery-caption">
+                        <strong>Custom Shower Installation</strong> - Waterproofing and tile work
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('heating-system.jpeg', 'Heating System Maintenance - Boiler and piping service')">
+                    <img src="heating-system.jpeg" alt="Complete heating system maintenance">
+                    <div class="gallery-caption">
+                        <strong>Heating System Maintenance</strong> - Boiler and piping service
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('oil-burner-service.jpeg', 'Oil Burner Service - Professional heating system repair')">
+                    <img src="oil-burner-service.jpeg" alt="Oil burner repair and maintenance">
+                    <div class="gallery-caption">
+                        <strong>Oil Burner Service</strong> - Professional heating system repair
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(imgSrc, caption) {
+            document.getElementById('lightbox').classList.add('active');
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox-caption').innerHTML = caption;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+
+    <section id="areas" class="section areas-served">
+        </div>
+    </section>
+
+    <section id="areas" class="section areas-served">
+        <div class="container">
+            <h2 class="section-title">Areas We Serve</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Proudly serving Brooklyn and Staten Island communities</p>
+            <div class="areas-list">
+                <a href="staten-island-plumber.html" class="area-tag">Staten Island</a>
+                <a href="bensonhurst-plumber.html" class="area-tag">Bensonhurst</a>
+                <a href="bay-ridge-plumber.html" class="area-tag">Bay Ridge</a>
+                <a href="dyker-heights-plumber.html" class="area-tag">Dyker Heights</a>
+                <a href="borough-park-plumber.html" class="area-tag">Borough Park</a>
+                <a href="gravesend-plumber.html" class="area-tag">Gravesend</a>
+                <a href="midwood-plumber.html" class="area-tag">Midwood</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Excellent service! They replaced my water heater quickly and professionally. The technician was knowledgeable and explained everything clearly. Highly recommend for any plumbing needs."</p>
+                    <div class="review-author">John Martinez</div>
+                    <div class="review-location">Staten Island, NY</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Called them for an emergency boiler repair on a freezing night. They arrived within an hour and had our heating back up in no time. Professional, courteous, and reasonably priced."</p>
+                    <div class="review-author">Sarah Cohen</div>
+                    <div class="review-location">Bensonhurst, Brooklyn</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Outstanding work on our bathroom renovation. The team was clean, efficient, and did beautiful work installing our new fixtures. Will definitely use them again."</p>
+                    <div class="review-author">Michael Russo</div>
+                    <div class="review-location">Bay Ridge, Brooklyn</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Fast, reliable, and professional. Fixed our drain issue that other plumbers couldn't solve. Great communication and fair pricing. This is now my go-to plumber!"</p>
+                    <div class="review-author">Lisa Thompson</div>
+                    <div class="review-location">Dyker Heights, Brooklyn</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"They installed a new heating system in our home. The crew was professional, cleaned up after themselves, and the system works perfectly. Very satisfied with their service."</p>
+                    <div class="review-author">David Goldstein</div>
+                    <div class="review-location">Borough Park, Brooklyn</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Incredible response time for our plumbing emergency. Fixed our burst pipe and prevented major water damage. Can't thank them enough for their quick and expert service!"</p>
+                    <div class="review-author">Jennifer Williams</div>
+                    <div class="review-location">Staten Island, NY</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Contact Us Today</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">Available 24/7 for emergency services</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>📞 Call Us</h3>
+                    <a href="tel:+13479958722">+1 (347) 995-8722</a>
+                    <p style="margin-top: 1rem;">Available 24/7</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>✉️ Email Us</h3>
+                    <a href="mailto:idepiping@gmail.com">idepiping@gmail.com</a>
+                    <p style="margin-top: 1rem;">Quick Response</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>⏰ Business Hours</h3>
+                    <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                    <p>Sat-Sun: Emergency Only</p>
+                    <p style="margin-top: 0.5rem; color: #ffd700;">24/7 Emergency Service</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="tel:+13479958722" class="cta-button">Call Now for Emergency Service</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 IDE Piping and Heating. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">Licensed & Insured | Serving Staten Island & Bensonhurst</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">
+                Plumbing Services | Water Heater Installation | Boiler Repair | Emergency Plumber | Drain Cleaning | Heating Systems
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

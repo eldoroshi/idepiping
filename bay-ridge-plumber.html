@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert plumber in Bay Ridge, Brooklyn. 24/7 emergency plumbing, water heater service, boiler repair, drain cleaning. Licensed & insured. Call (347) 995-8722">
+    <meta name="keywords" content="plumber Bay Ridge, emergency plumber Bay Ridge Brooklyn, water heater Bay Ridge, boiler repair Bay Ridge, drain cleaning Bay Ridge">
+    <meta name="geo.region" content="US-NY">
+    <meta name="geo.placename" content="Bay Ridge, Brooklyn">
+    <link rel="canonical" href="https://idepiping.com/bay-ridge-plumber.html">
+    <title>Plumber Bay Ridge Brooklyn | 24/7 Emergency Plumbing | IDE Piping</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .hero-local {
+            background: linear-gradient(rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.7)), url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .hero-local h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-local p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1e3c72;
+        }
+
+        .location-content {
+            background: white;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .main-content h2 {
+            color: #1e3c72;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .main-content h3 {
+            color: #2a5298;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+
+        .main-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .main-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .main-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+
+        .service-hours {
+            list-style: none;
+            margin: 0;
+        }
+
+        .service-hours li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .service-hours li:last-child {
+            border-bottom: none;
+        }
+
+        .emergency-badge {
+            background: #ff6b35;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .services-list {
+            background: #f8f9fa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #2a5298;
+        }
+
+        .service-item h3 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .breadcrumb {
+            padding: 1rem 0;
+            background: #f8f9fa;
+        }
+
+        .breadcrumb a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-local h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "PlumberService",
+        "name": "IDE Piping & Heating - Bay Ridge",
+        "image": "https://idepiping.com/bg.jpg",
+        "telephone": "+1-347-995-8722",
+        "email": "idepiping@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bay Ridge",
+            "addressRegion": "NY",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "40.6263",
+            "longitude": "-74.0303"
+        },
+        "url": "https://idepiping.com/bay-ridge.html",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 00:00-24:00",
+        "areaServed": {
+            "@type": "City",
+            "name": "Bay Ridge, Brooklyn"
+        },
+        "serviceType": ["Emergency Plumbing", "Water Heater Replacement", "Boiler Repair", "Drain Cleaning", "Heating System"]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">IDE Piping & Heating</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> › <strong>Bay Ridge Plumbing Services</strong>
+        </div>
+    </div>
+
+    <section class="hero-local">
+        <h1>Professional Plumber in Bay Ridge, Brooklyn</h1>
+        <p>Quality 24/7 Emergency Plumbing Services Throughout Bay Ridge</p>
+        <a href="tel:+13479958722" class="cta-button">Call Now: (347) 995-8722</a>
+    </section>
+
+    <section class="section location-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Bay Ridge's Trusted Plumbing Company</h2>
+                    <p>IDE Piping & Heating is proud to serve the Bay Ridge community with exceptional plumbing and heating services. Whether you own a classic brownstone, a modern condo, or a commercial property along Third or Fifth Avenue, our experienced technicians are ready to help.</p>
+
+                    <h3>Why Bay Ridge Chooses IDE Piping & Heating</h3>
+                    <ul>
+                        <li><strong>Local Expertise:</strong> Deep understanding of Bay Ridge's historic and modern properties</li>
+                        <li><strong>Rapid Response:</strong> Fast emergency service throughout Bay Ridge</li>
+                        <li><strong>Licensed Professionals:</strong> Fully certified and insured plumbers</li>
+                        <li><strong>Transparent Pricing:</strong> Clear quotes with no surprises</li>
+                        <li><strong>Customer Satisfaction:</strong> Committed to exceeding expectations</li>
+                    </ul>
+
+                    <h2>Comprehensive Plumbing Services in Bay Ridge</h2>
+
+                    <h3>Emergency Plumbing Available 24/7</h3>
+                    <p>When plumbing disasters strike, you need immediate help. Our Bay Ridge emergency plumbers respond quickly to burst pipes, major leaks, sewer backups, and heating failures. We're available 24/7, every day of the year, to protect your property from water damage.</p>
+
+                    <h3>Water Heater Installation & Repair</h3>
+                    <p>Need a new water heater or repairs on your existing system? We install and service all types of water heaters including tankless, tank-style, gas, and electric models. Our Bay Ridge technicians ensure you have reliable hot water when you need it.</p>
+
+                    <h3>Boiler Service & Heating Systems</h3>
+                    <p>Bay Ridge homes require dependable heating, especially in older buildings with historic heating systems. We specialize in boiler installation, repair, and maintenance, as well as radiator service and steam heating systems common in the neighborhood.</p>
+
+                    <h3>Professional Drain Cleaning</h3>
+                    <p>Clogged drains and sewer problems won't wait. We use advanced technology including camera inspection and hydro-jetting to quickly diagnose and clear any blockage, from kitchen sinks to main sewer lines.</p>
+
+                    <h3>Bathroom & Kitchen Plumbing</h3>
+                    <p>Renovating your Bay Ridge home? We provide complete plumbing services for bathroom and kitchen remodels, including fixture installation, pipe upgrades, and custom solutions for older homes with unique plumbing challenges.</p>
+
+                    <h3>Commercial Plumbing Services</h3>
+                    <p>We also serve Bay Ridge businesses along Third Avenue, Fifth Avenue, and throughout the commercial district with professional plumbing services including maintenance contracts, emergency repairs, and system installations.</p>
+
+                    <h2>Serving All of Bay Ridge</h2>
+                    <p>We provide plumbing services throughout Bay Ridge including:</p>
+                    <ul>
+                        <li>Third Avenue corridor</li>
+                        <li>Fifth Avenue shopping district</li>
+                        <li>Shore Road waterfront</li>
+                        <li>Colonial Road area</li>
+                        <li>Fort Hamilton</li>
+                        <li>All Bay Ridge neighborhoods</li>
+                    </ul>
+
+                    <h2>Call Your Bay Ridge Plumber Today</h2>
+                    <p>For professional plumbing service in Bay Ridge, Brooklyn, contact IDE Piping & Heating at <strong><a href="tel:+13479958722" style="color: #2a5298;">(347) 995-8722</a></strong>. We're available 24/7 for emergencies and ready to serve all your plumbing needs.</p>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar-card">
+                        <div class="emergency-badge">24/7 EMERGENCY SERVICE</div>
+                        <h3>Contact Us</h3>
+                        <p><strong>Phone:</strong><br>
+                        <a href="tel:+13479958722" style="color: #ff6b35; font-size: 1.3rem; font-weight: bold; text-decoration: none;">(347) 995-8722</a></p>
+                        <p><strong>Email:</strong><br>
+                        <a href="mailto:idepiping@gmail.com" style="color: #2a5298; text-decoration: none;">idepiping@gmail.com</a></p>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Service Hours</h3>
+                        <ul class="service-hours">
+                            <li><strong>Monday-Friday:</strong> 8:00 AM - 6:00 PM</li>
+                            <li><strong>Saturday-Sunday:</strong> Emergency Only</li>
+                            <li style="color: #ff6b35; font-weight: bold;">24/7 Emergency Service Available</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Service Area</h3>
+                        <p>Proudly serving Bay Ridge and all surrounding Brooklyn neighborhoods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services-list">
+        <div class="container">
+            <h2 class="section-title">Our Bay Ridge Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>🚨 Emergency Plumbing</h3>
+                    <p>24/7 rapid response for urgent issues</p>
+                </div>
+                <div class="service-item">
+                    <h3>💧 Water Heaters</h3>
+                    <p>Installation, repair & replacement</p>
+                </div>
+                <div class="service-item">
+                    <h3>🔥 Boiler Service</h3>
+                    <p>Expert heating system solutions</p>
+                </div>
+                <div class="service-item">
+                    <h3>🚽 Toilet Repair</h3>
+                    <p>Fast fixes for all toilet issues</p>
+                </div>
+                <div class="service-item">
+                    <h3>🚿 Bathroom Plumbing</h3>
+                    <p>Complete bathroom services</p>
+                </div>
+                <div class="service-item">
+                    <h3>🐍 Drain Cleaning</h3>
+                    <p>Professional drain & sewer service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Bay Ridge's Premier Plumbing Service</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Call for Fast, Professional Service</p>
+            <a href="tel:+13479958722" class="cta-button">Call Now: (347) 995-8722</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 IDE Piping & Heating. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">Licensed & Insured Plumber Serving Bay Ridge, Brooklyn</p>
+        </div>
+    </footer>
+</body>
+</html>

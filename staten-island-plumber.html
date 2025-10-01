@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional plumbing services in Staten Island, NY. 24/7 emergency plumber, water heater replacement, boiler repair, drain cleaning. Licensed & insured. Call (347) 995-8722">
+    <meta name="keywords" content="plumber Staten Island, emergency plumber Staten Island, water heater Staten Island, boiler repair Staten Island, drain cleaning Staten Island NY">
+    <meta name="geo.region" content="US-NY">
+    <meta name="geo.placename" content="Staten Island">
+    <link rel="canonical" href="https://idepiping.com/staten-island-plumber.html">
+    <title>Plumber Staten Island NY | 24/7 Emergency Plumbing Services | IDE Piping</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+
+        .hero-local {
+            background: linear-gradient(rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.7)), url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .hero-local h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-local p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1e3c72;
+        }
+
+        .location-content {
+            background: white;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .main-content h2 {
+            color: #1e3c72;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .main-content h3 {
+            color: #2a5298;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+        }
+
+        .main-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .main-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .main-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+
+        .service-hours {
+            list-style: none;
+            margin: 0;
+        }
+
+        .service-hours li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .service-hours li:last-child {
+            border-bottom: none;
+        }
+
+        .emergency-badge {
+            background: #ff6b35;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .services-list {
+            background: #f8f9fa;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .service-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #2a5298;
+        }
+
+        .service-item h3 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .breadcrumb {
+            padding: 1rem 0;
+            background: #f8f9fa;
+        }
+
+        .breadcrumb a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-local h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "PlumberService",
+        "name": "IDE Piping & Heating - Staten Island",
+        "image": "https://idepiping.com/bg.jpg",
+        "telephone": "+1-347-995-8722",
+        "email": "idepiping@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Staten Island",
+            "addressRegion": "NY",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "40.5795",
+            "longitude": "-74.1502"
+        },
+        "url": "https://idepiping.com/staten-island.html",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 00:00-24:00",
+        "areaServed": {
+            "@type": "City",
+            "name": "Staten Island"
+        },
+        "serviceType": ["Emergency Plumbing", "Water Heater Replacement", "Boiler Repair", "Drain Cleaning", "Heating System"]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">IDE Piping & Heating</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> › <strong>Staten Island Plumbing Services</strong>
+        </div>
+    </div>
+
+    <section class="hero-local">
+        <h1>Expert Plumber in Staten Island, NY</h1>
+        <p>Fast, Reliable 24/7 Emergency Plumbing Services Throughout Staten Island</p>
+        <a href="tel:+13479958722" class="cta-button">Call Now: (347) 995-8722</a>
+    </section>
+
+    <section class="section location-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Professional Plumbing Services in Staten Island</h2>
+                    <p>IDE Piping & Heating is Staten Island's trusted plumbing and heating company, serving residential and commercial properties throughout all Staten Island neighborhoods. With years of experience and a commitment to quality service, we're available 24/7 for emergency plumbing needs.</p>
+
+                    <h3>Why Choose Our Staten Island Plumbing Service?</h3>
+                    <ul>
+                        <li><strong>Local Expertise:</strong> Deep knowledge of Staten Island's plumbing systems and building codes</li>
+                        <li><strong>Rapid Response:</strong> Average response time under 60 minutes for emergencies</li>
+                        <li><strong>Licensed & Insured:</strong> Fully certified plumbers with comprehensive insurance coverage</li>
+                        <li><strong>Transparent Pricing:</strong> Upfront quotes with no hidden fees</li>
+                        <li><strong>Quality Guarantee:</strong> All work backed by our satisfaction guarantee</li>
+                    </ul>
+
+                    <h2>Comprehensive Plumbing Services in Staten Island</h2>
+
+                    <h3>Emergency Plumbing Services</h3>
+                    <p>Plumbing emergencies don't wait for business hours. Our Staten Island emergency plumbers are available 24/7 to handle burst pipes, severe leaks, overflowing toilets, and other urgent plumbing issues. We understand the unique challenges of Staten Island properties and respond quickly to prevent water damage and costly repairs.</p>
+
+                    <h3>Water Heater Installation & Repair</h3>
+                    <p>Whether you need a new water heater installed or your existing unit repaired, our Staten Island technicians are experts in all types of water heating systems including tankless, gas, and electric models. We work with top brands and ensure your home has reliable hot water year-round.</p>
+
+                    <h3>Boiler & Heating System Service</h3>
+                    <p>Staten Island winters demand reliable heating. Our certified technicians provide comprehensive boiler installation, repair, and maintenance services. We service all makes and models, ensuring your heating system runs efficiently throughout the cold months.</p>
+
+                    <h3>Drain Cleaning & Sewer Services</h3>
+                    <p>From minor clogs to major sewer line issues, our Staten Island plumbers use advanced equipment including video camera inspection and hydro-jetting to diagnose and clear any drainage problem quickly and effectively.</p>
+
+                    <h3>Bathroom & Kitchen Plumbing</h3>
+                    <p>Planning a renovation or need fixture repairs? We handle all aspects of bathroom and kitchen plumbing including sink installation, toilet repair and replacement, shower and bathtub installation, and faucet services.</p>
+
+                    <h2>Serving All Staten Island Neighborhoods</h2>
+                    <p>Our plumbing services are available throughout Staten Island including:</p>
+                    <ul>
+                        <li>St. George</li>
+                        <li>Tottenville</li>
+                        <li>Great Kills</li>
+                        <li>New Dorp</li>
+                        <li>Eltingville</li>
+                        <li>Annadale</li>
+                        <li>Stapleton</li>
+                        <li>Port Richmond</li>
+                        <li>West Brighton</li>
+                        <li>And all other Staten Island areas</li>
+                    </ul>
+
+                    <h2>Contact Your Local Staten Island Plumber Today</h2>
+                    <p>Don't let plumbing problems disrupt your day. Call IDE Piping & Heating at <strong><a href="tel:+13479958722" style="color: #2a5298;">(347) 995-8722</a></strong> for fast, professional plumbing service in Staten Island. We're here 24/7 to help with all your plumbing and heating needs.</p>
+                </div>
+
+                <div class="sidebar">
+                    <div class="sidebar-card">
+                        <div class="emergency-badge">24/7 EMERGENCY SERVICE</div>
+                        <h3>Contact Us</h3>
+                        <p><strong>Phone:</strong><br>
+                        <a href="tel:+13479958722" style="color: #ff6b35; font-size: 1.3rem; font-weight: bold; text-decoration: none;">(347) 995-8722</a></p>
+                        <p><strong>Email:</strong><br>
+                        <a href="mailto:idepiping@gmail.com" style="color: #2a5298; text-decoration: none;">idepiping@gmail.com</a></p>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Service Hours</h3>
+                        <ul class="service-hours">
+                            <li><strong>Monday-Friday:</strong> 8:00 AM - 6:00 PM</li>
+                            <li><strong>Saturday-Sunday:</strong> Emergency Only</li>
+                            <li style="color: #ff6b35; font-weight: bold;">24/7 Emergency Service Available</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Service Area</h3>
+                        <p>Proudly serving all of Staten Island and surrounding areas in New York City.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services-list">
+        <div class="container">
+            <h2 class="section-title">Our Staten Island Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>🚨 Emergency Plumbing</h3>
+                    <p>24/7 rapid response for urgent plumbing issues</p>
+                </div>
+                <div class="service-item">
+                    <h3>💧 Water Heaters</h3>
+                    <p>Installation, repair & replacement</p>
+                </div>
+                <div class="service-item">
+                    <h3>🔥 Boiler Service</h3>
+                    <p>Expert heating system solutions</p>
+                </div>
+                <div class="service-item">
+                    <h3>🚽 Toilet Repair</h3>
+                    <p>Fast fixes for all toilet issues</p>
+                </div>
+                <div class="service-item">
+                    <h3>🚿 Bathroom Plumbing</h3>
+                    <p>Complete bathroom services</p>
+                </div>
+                <div class="service-item">
+                    <h3>🐍 Drain Cleaning</h3>
+                    <p>Professional drain & sewer service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section">
+        <div class="container">
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 1rem;">Ready to Solve Your Plumbing Problem?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Call Staten Island's Most Trusted Plumber</p>
+            <a href="tel:+13479958722" class="cta-button">Call Now: (347) 995-8722</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 IDE Piping & Heating. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">Licensed & Insured Plumber Serving Staten Island, NY</p>
+        </div>
+    </footer>
+</body>
+</html>
