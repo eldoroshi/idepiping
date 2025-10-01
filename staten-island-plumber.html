@@ -69,6 +69,84 @@
             color: #ffd700;
         }
 
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 300px;
+            height: 100%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+            transition: right 0.3s;
+            z-index: 10001;
+            overflow-y: auto;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .mobile-menu-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .mobile-menu-items {
+            padding: 1rem 0;
+        }
+
+        .mobile-menu-items a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            transition: background 0.3s;
+        }
+
+        .mobile-menu-items a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .mobile-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 10000;
+        }
+
+        .mobile-overlay.active {
+            display: block;
+        }
+
         .hero-local {
             background: linear-gradient(rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.7)), url('bg.jpg');
             background-size: cover;
@@ -269,6 +347,14 @@
             .nav-links {
                 display: none;
             }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
         }
     </style>
     <script type="application/ld+json">
@@ -310,8 +396,25 @@
                 <a href="index.html#services">Services</a>
                 <a href="index.html#contact">Contact</a>
             </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Menu">
+                ☰
+            </button>
         </nav>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div style="color: white; font-weight: bold; font-size: 1.2rem;">Menu</div>
+            <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close Menu">&times;</button>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="index.html" onclick="closeMobileMenu()">Home</a>
+            <a href="index.html#services" onclick="closeMobileMenu()">Services</a>
+            <a href="index.html#contact" onclick="closeMobileMenu()">Contact</a>
+        </div>
+    </div>
 
     <div class="breadcrumb">
         <div class="container">
@@ -451,5 +554,23 @@
             <p style="margin-top: 0.5rem;">Licensed & Insured Plumber Serving Staten Island, NY</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileOverlay');
+            menu.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileOverlay');
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
 </body>
 </html>
